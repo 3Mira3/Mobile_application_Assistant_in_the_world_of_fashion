@@ -1,0 +1,310 @@
+<resources>
+    <string name="app_name">Помічник у світі моди</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Головна</string>
+    <string name="nav_history">Історія</string>
+    <string name="nav_catalog">Каталог</string>
+    <string name="nav_mixer">Підбір</string>
+    <string name="nav_stylists">Стилісти</string>
+    <string name="nav_colors">Кольори</string>
+    <string name="nav_profile">Профіль</string>
+
+    <!-- Home Page -->
+    <string name="home_welcome">Привіт!</string>
+    <string name="home_subtitle">Ласкаво просимо до вашого персонального помічника у світі моди</string>
+    <string name="home_trend_title">Тренд тижня</string>
+    <string name="home_trend_desc">Дізнайтеся, що зараз на піку популярності</string>
+    <string name="home_quick_access">Швидкий доступ</string>
+    <string name="home_trend_default">Стиль, що надихає</string>
+    
+    <!-- History -->
+    <string name="history_title">Епохи моди</string>
+    <string name="history_choose_epoch">Виберіть епоху</string>
+    <string name="history_all_looks">Всі образи</string>
+    <string name="history_dresses">Сукні</string>
+    <string name="history_pants">Штани та спідниці</string>
+    
+    <!-- Mixer / Smart Selection -->
+    <string name="mixer_title">Ваш образ</string>
+    <string name="mixer_upper">Верхня частина</string>
+    <string name="mixer_lower">Нижня частина</string>
+    <string name="mixer_add_upper">+ ДОДАТИ ВЕРХ</string>
+    <string name="mixer_add_lower">+ ДОДАТИ НИЗ</string>
+    <string name="mixer_create_look">Створити образ</string>
+    <string name="mixer_smart_params">Смарт-параметри</string>
+    <string name="mixer_your_style">Ваш стиль:</string>
+    <string name="mixer_gender_female">Жіночий</string>
+    <string name="mixer_gender_male">Чоловічий</string>
+    <string name="mixer_season">Сезон:</string>
+    <string name="mixer_winter">Зима</string>
+    <string name="mixer_spring">Весна</string>
+    <string name="mixer_summer">Літо</string>
+    <string name="mixer_autumn">Осінь</string>
+    <string name="mixer_destination">Куди прямуєте?</string>
+    <string name="mixer_work">Робота</string>
+    <string name="mixer_party">Вечірка</string>
+    <string name="mixer_walk">Прогулянка</string>
+    <string name="mixer_gym">Спортзал</string>
+    <string name="mixer_meeting">Зустріч</string>
+    <string name="mixer_mood">Ваш настрій:</string>
+    <string name="mixer_mood_good">Супер! 😊</string>
+    <string name="mixer_mood_bad">Так собі... 😔</string>
+    <string name="mixer_smart_btn">🔥 СМАРТ-ПІДБІР</string>
+    
+    <!-- Layout Specific Mixer Keys -->
+    <string name="mixer_upload_upper">Завантажте верхню частину</string>
+    <string name="mixer_upload_lower">Завантажте нижню частину</string>
+    <string name="mixer_generate">ГЕНЕРУВАТИ ОБРАЗ</string>
+    <string name="mixer_ai_analyzing">ШІ аналізує ваш гардероб...</string>
+    
+    <!-- Smart Result Dialog -->
+    <string name="mixer_result_title">Ваш ідеальний образ:</string>
+    <string name="smart_result_ready">Ваш смарт-образ готовий!</string>
+    <string name="smart_result_cool">КРУТО!</string>
+    <string name="smart_result_location_placeholder">📍 Місто: Київ</string>
+    <string name="smart_result_mood_placeholder">Гарного дня! 😊</string>
+    <string name="smart_result_details_placeholder">Цей образ ідеально підійде для вашого настрою та місця призначення.</string>
+    <string name="smart_result_msg_good_1">Гарного дня! 😊</string>
+    <string name="smart_result_msg_good_2">Сьогодні ви виглядаєте неперевершено! ✨</string>
+    <string name="smart_result_msg_good_3">Чудовий вибір для чудового настрою! 💖</string>
+    <string name="smart_result_msg_bad_1">Не сумуйте, все налагодиться! 🤗</string>
+    <string name="smart_result_msg_bad_2">Цей образ точно підніме вам настрій! 🌈</string>
+    <string name="smart_result_msg_bad_3">Усміхніться, ви прекрасні! 🌸</string>
+    <string name="smart_result_footer">Оскільки у місті %1$s зараз %2$s, ми підібрали цей образ на основі актуальних трендів Pexels Fashion.</string>
+
+    <!-- Weather Fashion Advice -->
+    <string name="advice_freezing">Сьогодні справжній мороз! ❄️ Обов\'язково додайте до образу тепле пальто та шарф.</string>
+    <string name="advice_cold">На вулиці досить прохолодно. 🧥 Рекомендуємо багатошаровість: светр поверх сорочки буде ідеальним.</string>
+    <string name="advice_mild">Комфортна погода для прогулянок. 🌤️ Легкий піджак або кардиган доповнять ваш стиль.</string>
+    <string name="advice_warm">Тепло та приємно! ☀️ Обирайте натуральні тканини, щоб почуватися вільно.</string>
+    <string name="advice_hot">Сьогодні справжня спека! 🔥 Найкраще підійдуть легкі шорти або сукня з льону.</string>
+
+    <!-- Stylists -->
+    <string name="stylists_header">Наші Стилісти</string>
+    <string name="stylist_appointment">Записатися на прийом</string>
+    <string name="stylists_list_label">Список стилістів:</string>
+    <string name="stylists_fav_label">Ваші улюблені:</string>
+    
+    <!-- Colors Screen -->
+    <string name="colors_magic">Магія кольору</string>
+    <string name="colors_diag_title">Колірна діагностика</string>
+    <string name="colors_diag_desc">Оберіть 2-3 кольори для перевірки гармонії вашого майбутнього образу:</string>
+    <string name="colors_diag_hint">*Щоб вибрати відтінок кольору - затисніть необхідний колір</string>
+    <string name="colors_btn_run">ЗАПУСТИТИ ДІАГНОСТИКУ</string>
+    <string name="color_diag_min_colors">Оберіть хоча б 2 кольори</string>
+
+    <!-- Color Harmony Verdicts (UA) -->
+    <string name="color_verdict_urban_gothic">Urban Gothic / Minimalist</string>
+    <string name="color_verdict_soft_fresh">Soft &amp; Fresh Harmony</string>
+    <string name="color_verdict_base_contrast">Базовий контраст</string>
+    <string name="color_verdict_monochrome">Монохромна елегантність</string>
+    <string name="color_verdict_analogous">Аналогічна гармонія</string>
+    <string name="color_verdict_contrast">Ефектний контраст</string>
+    <string name="color_verdict_risky">Ризиковане поєднання</string>
+    <string name="color_verdict_balanced">Збалансований мікс</string>
+    <string name="color_verdict_triad">Колірна тріада / Складний образ</string>
+    <string name="color_verdict_creative">Креативний мікс</string>
+
+    <!-- Color Harmony Explanations (UA) -->
+    <string name="color_exp_urban_gothic">Чорний та сірий — це база сучасного міського стилю. Це поєднання виглядає одночасно суворо та стильно.</string>
+    <string name="color_exp_soft_fresh">Це поєднання випромінює легкість та романтизм.</string>
+    <string name="color_exp_monochrome">Поєднання кількох нейтральних кольорів — це ознака витонченого смаку та спокійної впевненості.</string>
+    <string name="color_exp_analogous">Ваші кольори — сусіди. Це створює плавний перехід, який виглядає дуже дорого та інтелігентно.</string>
+    <string name="color_exp_base_contrast">Використання нейтрального кольору (%1$s) дозволяє яскравому (%2$s) повністю розкритися.</string>
+    <string name="color_adv_base_contrast">Це універсальний вибір для будь-якого віку. Ваш образ приверне увагу завдяки чистоті кольору %1$s.</string>
+    <string name="color_exp_contrast">Це поєднання протилежностей. Ваш образ точно приверне увагу та зацікавлені погляди.</string>
+    <string name="color_exp_risky">Ці кольори знаходяться в зоні візуального конфлікту. Вони можуть здаватися «брудними» або занадто різкими один до одного.</string>
+    <string name="color_exp_balanced">Ці кольори створюють цікаву візуальну гру, що підкреслює вашу індивідуальність.</string>
+    <string name="color_exp_triad">Триколірний образ вимагає майстерності. Ви обрали палітру, що виглядає завершеною та професійною.</string>
+    <string name="color_exp_creative">Ви обрали сміливу палітру, яка виділяє вас з натовпу. Це вибір творчих особистостей.</string>
+
+    <!-- Color Harmony Advice (UA) -->
+    <string name="color_adv_urban_gothic">Тінейджерам радимо додати сітчастий лонгслів (mesh) під чорну футболку. Для створення образу — сіре пальто оверсайз із чорними лоферами.</string>
+    <string name="color_adv_soft_fresh">Для образу: рожева сукня/поло з білими кедами або сорочка.</string>
+    <string name="color_adv_monochrome">Спробуйте грати з об\'ємами: широкі штани та приталений верх. Додайте якісний шкіряний ремінь або годинник.</string>
+    <string name="color_adv_risky">• **Як виправити:** Спробуйте додати білий або світло-сірий колір, щоб створити «повітря» між ними.</string>
+    <string name="color_adv_creative">Щоб образ був гармонійним, оберіть один колір домінуючим. Решта нехай будуть у деталях.</string>
+    <string name="color_adv_wardobe_header">\n\n• **Варіанти для гардероба:**\n</string>
+    <string name="colors_art_mixing">Мистецтво змішування</string>
+    <string name="colors_show_last">Показати останній результат</string>
+    <string name="colors_result_title">Результат аналізу</string>
+    <string name="colors_stylist_advice">Поради стиліста:</string>
+    <string name="colors_palette_hint">Натисніть на коло, щоб розгорнути</string>
+    <string name="colors_hide_theory">Приховати теорію</string>
+    <string name="colors_about_palette">Про палітру</string>
+    <string name="colors_essence_title">Сутність віх кольору</string>
+    <string name="colors_combo_title">Чому вони пасують?</string>
+    
+    <!-- Color Theory Keys -->
+    <string name="color_intro">Палітра — це ваш путівник у світ гармонії. Кожен колір несе свій настрій та енергетику.</string>
+    <string name="color_essence">Основа кольору полягає в його температурі, насиченості та значенні для вашого типу зовнішності.</string>
+    <string name="color_combos">Вдалі поєднання будуються на контрасті або спорідненості відтінків, що створює цілісний образ.</string>
+    <string name="color_mixing">Змішування кольорів — це мистецтво, яке дозволяє створювати унікальні візуальні ефекти.</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">Мій профіль</string>
+    <string name="profile_subtitle">Налаштування застосунку</string>
+    <string name="profile_section_app">ЗАСТОСУНОК</string>
+    <string name="profile_section_feedback">ЗВОРОТНІЙ ЗВ\'ЯЗОК</string>
+    <string name="profile_language">Мова застосунку</string>
+    <string name="profile_theme">Тема застосунку</string>
+    <string name="profile_city">Поточне місто</string>
+    <string name="profile_rate">Оцінити застосунок</string>
+    <string name="profile_contact">Зв\'язок із розробником</string>
+    <string name="profile_version">Версія застосунку: 2.0.26 (Neon Edition)</string>
+    <string name="profile_account_google">Увійти через Google</string>
+    <string name="profile_account_connected">Підключено:</string>
+    
+    <!-- Theme Selection -->
+    <string name="theme_light">Світла</string>
+    <string name="theme_dark">Темна</string>
+    <string name="theme_system">Системна</string>
+    <string name="theme_dialog_title">Оберіть тему</string>
+
+    <!-- Language Selection -->
+    <string name="lang_ukrainian">Українська</string>
+    <string name="lang_english">English</string>
+    <string name="lang_dialog_title">Оберіть мову</string>
+    <string name="lang_toast_ua">Мову змінено на українську</string>
+    <string name="lang_toast_en">Language changed to English</string>
+
+    <!-- City/Country Dialog -->
+    <string name="dialog_country_title">Країна</string>
+    <string name="dialog_city_title">Місто</string>
+    <string name="btn_save">Зберегти</string>
+
+    <!-- Rate Dialog -->
+    <string name="dialog_rate_title">Оцінити додаток</string>
+    <string name="dialog_rate_message">Вам подобається наш додаток? Будь ласка, залиште відгук у Play Store!</string>
+    <string name="dialog_rate_yes">Оцінити зараз</string>
+    <string name="dialog_rate_no">Пізніше</string>
+
+    <!-- Contact Dialog -->
+    <string name="dialog_contact_title">Контакти</string>
+    <string name="dialog_contact_message">Зв\'яжіться з нами за адресою: support@fashionworld.com</string>
+
+    <!-- Trends Dialog -->
+    <string name="trends_not_found">Тренди не знайдено</string>
+    <string name="trends_load_error">Помилка завантаження: %1$s</string>
+    <string name="trends_author_prefix">від %1$s</string>
+    <string name="trends_inspiration">Натхнення моди</string>
+
+    <!-- Toasts & Misc -->
+    <string name="toast_add_photos">Додайте хоча б по одному фото для верху та низу</string>
+    <string name="toast_select_params">Будь ласка, оберіть усі параметри (стать, сезон, місце та настрій)</string>
+    <string name="profile_fill_alert_title">Профіль не заповнено</string>
+    <string name="profile_fill_alert_msg">Будь ласка, вкажіть ваше місто та країну в налаштуваннях профілю для точного підбору образу.</string>
+    <string name="btn_to_settings">До налаштувань</string>
+    <string name="btn_later">Пізніше</string>
+
+    <string name="catalog_title">Каталог</string>
+
+    <!-- Centuries -->
+    <string name="century_ancient">Античність та Середньовіччя</string>
+    <string name="century_renaissance">Відродження та Бароко</string>
+    <string name="century_xviii">XVIII століття (Рококо)</string>
+    <string name="century_xix">XIX століття (Вікторіанська епоха)</string>
+    <string name="century_xx_early">XX (Початок: 1900-1930)</string>
+    <string name="century_xx_mid">XX (Середина: 1940-1960)</string>
+    <string name="century_xx_late">XX (Кінець: 1970-1990)</string>
+    <string name="century_xxi">XXI століття (Сучасність)</string>
+
+    <!-- Parts -->
+    <string name="part_tops">Футболки та блузи</string>
+    <string name="part_outerwear">Верхній одяг (пальто, шуби)</string>
+    <string name="part_hats">Головні убори</string>
+    <string name="part_accessories">Аксесуари (рукавички)</string>
+
+    <!-- Looks -->
+    <string name="look_1_title">Давньоєгипетська калазіріс</string>
+    <string name="look_1_desc">Класичний облягаючий сарафан на бретелях.</string>
+    <string name="look_1_full">Основа жіночого гардероба Нового царства. Виготовлявся з прямокутного полотна льону, яке обгорталося навколо тіла.</string>
+    
+    <string name="look_2_title">Давньогрецький пеплос</string>
+    <string name="look_2_desc">Важке вовняне вбрання, зафіксоване фібулами.</string>
+    <string name="look_2_full">Архаїчний грецький одяг. Це великий прямокутник вовни, який складався навпіл і оперізувався.</string>
+
+    <string name="look_3_title">Римська стола</string>
+    <string name="look_3_desc">Символічне вбрання римської матрони.</string>
+    <string name="look_3_full">Обов\'язковий одяг для заміжніх громадянок Риму. Вона мала широку кайму (institia).</string>
+
+    <string name="look_4_title">Візантійська далматика</string>
+    <string name="look_4_desc">Розкішна туніка з широкими рукавами.</string>
+    <string name="look_4_full">Візантійська мода поєднала римську туніку зі східною розкішшю. Далматика шилася з важкого шовку.</string>
+
+    <string name="look_5_title">Середньовічна уппеланд</string>
+    <string name="look_5_desc">Об\'ємна парадна сукня з високим коміром.</string>
+    <string name="look_5_full">Вершина моди XIV-XV століть. Вимагала величезної кількості дорогої тканини.</string>
+
+    <string name="look_6_title">Єгипетський шендит</string>
+    <string name="look_6_desc">Чоловіча стегнова пов\'язка з плісированого льону.</string>
+    <string name="look_6_full">Шендит був основним елементом чоловічого костюма в Стародавньому Єгипті.</string>
+
+    <string name="look_7_title">Перські анаксіриди</string>
+    <string name="look_7_desc">Штани східного типу для верхової їзди.</string>
+    <string name="look_7_full">На грецьких вазах перси зображені у вузьких візерунчасних штанях — анаксіридах.</string>
+
+    <string name="look_8_title">Браки (Braccae)</string>
+    <string name="look_8_desc">Галльські та німецькі штани легіонерів.</string>
+    <string name="look_8_full">Римляни спочатку зневажали штани, але під час воєн на півночі оцінили їхній захист.</string>
+
+    <string name="look_9_title">Шосси (Hose) XIV ст.</string>
+    <string name="look_9_desc">Роздільні штани-панчохи, що щільно облягали ноги.</string>
+    <string name="look_9_full">У повному середньовіччі чоловіки носили шосси — дві окремі штанини.</string>
+
+    <string name="look_10_title">Середньовічні бре (Braies)</string>
+    <string name="look_10_desc">Спідні штани з білого льону.</string>
+    <string name="look_10_full">Бре були прообразом сучасної білизни. Вони мали куліску для пояса.</string>
+
+    <!-- Stylist Data -->
+    <string name="stylist_1_name">Олена Модна</string>
+    <string name="stylist_1_bio">Експерт з античного стилю та сучасного мінімалізму. Знає все про те, як носити туніку в 2026 році.</string>
+    
+    <string name="stylist_2_name">Марина Ренесанс</string>
+    <string name="stylist_2_bio">Майстер складних образів та багатошаровості. Допоможе вам виглядати як шедевр Да Вінчі.</string>
+    
+    <string name="stylist_3_name">Катя Стиль</string>
+    <string name="stylist_3_bio">Королева аксесуарів та витончених ліній. Спеціалізується на вечірніх сукнях та корсетах.</string>
+    
+    <string name="stylist_4_name">Віктор Вінтаж</string>
+    <string name="stylist_4_bio">Любитель історії та класичного костюма. Створить для вас образ, що не підвладний часу.</string>
+
+    <string-array name="countries_array">
+        <item>Україна</item>
+        <item>Польща</item>
+        <item>Німеччина</item>
+        <item>Франція</item>
+        <item>Італія</item>
+        <item>Іспанія</item>
+        <item>Великобританія</item>
+        <item>США</item>
+        <item>Канада</item>
+        <item>Японія</item>
+    </string-array>
+
+    <string-array name="cities_array">
+        <item>Київ</item>
+        <item>Харків</item>
+        <item>Одеса</item>
+        <item>Дніпро</item>
+        <item>Львів</item>
+        <item>Запоріжжя</item>
+        <item>Кривий Ріг</item>
+        <item>Миколаїв</item>
+        <item>Вінниця</item>
+        <item>Чернігів</item>
+        <item>Полтава</item>
+        <item>Херсон</item>
+        <item>Черкаси</item>
+        <item>Хмельницький</item>
+        <item>Чернівці</item>
+        <item>Житомир</item>
+        <item>Суми</item>
+        <item>Рівне</item>
+        <item>Івано-Франківськ</item>
+        <item>Тернопіль</item>
+        <item>Луцьк</item>
+        <item>Ужгород</item>
+    </string-array>
+</resources>

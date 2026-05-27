@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_fashion_gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Alive Title -->
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comic_sans"
+            android:text="@string/colors_magic"
+            android:textColor="@color/text_primary"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:shadowColor="#40000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Color Diagnostic Section (NOW AT THE TOP) -->
+        <TextView
+            android:id="@+id/text_diagnostic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/comic_sans"
+            android:text="@string/colors_diag_title"
+            android:textColor="#BC13FE"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/text_title"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_diagnostic_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/comic_sans"
+            android:text="@string/colors_diag_desc"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/text_diagnostic_title" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_color_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#20FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/text_diagnostic_desc">
+
+            <GridLayout
+                android:id="@+id/grid_colors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:columnCount="4"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/text_long_press_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/colors_diag_hint"
+            android:textSize="11sp"
+            android:textColor="#888888"
+            android:textStyle="italic"
+            app:layout_constraintTop_toBottomOf="@id/card_color_selection"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_run_diagnostic"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/colors_btn_run"
+            android:fontFamily="@font/comic_sans"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#BC13FE"
+            app:layout_constraintTop_toBottomOf="@id/text_long_press_hint" />
+
+        <!-- Button to show hidden results -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_show_last_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/colors_show_last"
+            android:visibility="gone"
+            app:icon="@android:drawable/ic_menu_view"
+            app:cornerRadius="20dp"
+            android:backgroundTint="#BC13FE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_run_diagnostic" />
+
+        <!-- Diagnostic Results -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_diagnostic_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#FF69B4"
+            app:layout_constraintTop_toBottomOf="@id/btn_show_last_result">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/btn_close_results"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    app:tint="#888888" />
+
+                <TextView
+                    android:id="@+id/text_result_verdict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/btn_close_results"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/comic_sans"
+                    android:text="@string/colors_result_title"
+                    android:textColor="#FF69B4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_result_explanation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_result_verdict"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/comic_sans"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    android:textIsSelectable="true" />
+
+                <View
+                    android:id="@+id/divider_results"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/text_result_explanation"
+                    android:layout_marginTop="16dp"
+                    android:background="#EEEEEE" />
+
+                <TextView
+                    android:id="@+id/title_advice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider_results"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/comic_sans"
+                    android:text="@string/colors_stylist_advice"
+                    android:textColor="#BC13FE"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_result_advice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_advice"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/comic_sans"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textIsSelectable="true" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Main Palette Image (NOW BELOW DIAGNOSTIC) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_palette"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:stateListAnimator="@animator/stylist_card_animator"
+            app:layout_constraintTop_toBottomOf="@id/card_diagnostic_result"
+            app:layout_goneMarginTop="16dp">
+
+            <ImageView
+                android:id="@+id/image_palette"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/text_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/colors_palette_hint"
+            android:textSize="13sp"
+            android:textColor="#555555"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/card_palette"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Custom Toggle Button -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_toggle_theory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="#99BC13FE"
+            app:strokeWidth="1.5dp"
+            app:strokeColor="#BC13FE"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toBottomOf="@id/text_hint"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/icon_theory"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@android:drawable/ic_menu_view"
+                    app:tint="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/text_btn_theory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colors_hide_theory"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/comic_sans"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Theory Group (Container) -->
+        <LinearLayout
+            android:id="@+id/layout_theory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/btn_toggle_theory">
+
+            <!-- Introduction -->
+            <TextView
+                android:id="@+id/text_intro_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/comic_sans"
+                android:text="@string/colors_about_palette"
+                android:textColor="@color/primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_intro_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/comic_sans"
+                android:text="@string/color_intro"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textIsSelectable="true" />
+
+            <!-- Essence of Colors -->
+            <TextView
+                android:id="@+id/text_essence_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/comic_sans"
+                android:text="@string/colors_essence_title"
+                android:textColor="@color/primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_essence_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/comic_sans"
+                android:text="@string/color_essence"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textIsSelectable="true" />
+
+            <!-- Combinations -->
+            <TextView
+                android:id="@+id/text_combo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/comic_sans"
+                android:text="@string/colors_combo_title"
+                android:textColor="@color/primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_combo_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/comic_sans"
+                android:text="@string/color_combos"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <!-- Mixing Section -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_mixing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:layout_constraintTop_toBottomOf="@id/layout_theory"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_neon_card"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comic_sans"
+                    android:text="@string/colors_art_mixing"
+                    android:textColor="#FF69B4"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_mixing_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/comic_sans"
+                    android:text="@string/color_mixing"
+                    android:textColor="@color/text_primary"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

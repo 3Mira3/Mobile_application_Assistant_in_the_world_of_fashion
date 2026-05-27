@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme Colors -->
+    <!-- Main background: Deep pleasant purple -->
+    <color name="background_light">#12081F</color> 
+    
+    <!-- Surface (Cards, Dialogs): slightly lighter purple -->
+    <color name="surface">#1D0E2E</color>
+    
+    <!-- Text Colors: Using high contrast white/lavender for readability -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B39DDB</color>
+    
+    <!-- Primary color can be a bit more vibrant in dark mode -->
+    <color name="primary">#9575CD</color>
+    <color name="primary_variant">#000000</color>
+
+    <!-- Adaptive Neon Card Colors -->
+    <color name="neon_card_background">#120024</color>
+    <color name="overlay_background">#E61D0E2E</color>
+    
+    <!-- Sidebar Adaptive Colors -->
+    <color name="sidebar_start">#2D0B2E</color>
+    <color name="sidebar_center">#5D1031</color>
+</resources>

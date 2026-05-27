@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.ui.fragments.HomeFragment"
+        android:label="Головна"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.ui.fragments.HistoryFragment"
+        android:label="@string/nav_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_catalog"
+        android:name="stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.ui.fragments.CatalogFragment"
+        android:label="@string/nav_catalog"
+        tools:layout="@layout/fragment_catalog" />
+
+    <fragment
+        android:id="@+id/navigation_mixer"
+        android:name="stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.ui.fragments.MixerFragment"
+        android:label="@string/nav_mixer"
+        tools:layout="@layout/fragment_mixer" />
+
+    <fragment
+        android:id="@+id/navigation_stylists"
+        android:name="stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.ui.fragments.StylistFragment"
+        android:label="@string/nav_stylists"
+        tools:layout="@layout/fragment_stylist" />
+
+    <fragment
+        android:id="@+id/navigation_colors"
+        android:name="stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.ui.fragments.ColorFragment"
+        android:label="@string/nav_colors"
+        tools:layout="@layout/fragment_color" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.ui.fragments.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

@@ -1,0 +1,32 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Primary Palette (Violet/Purple Theme) -->
+    <color name="primary">#6A1B9A</color> <!-- Deep Purple -->
+    <color name="primary_variant">#4A148C</color> <!-- Darker Purple -->
+    <color name="secondary">#E1BEE7</color> <!-- Light Lavender -->
+    <color name="accent">#AA00FF</color> <!-- Bright Violet -->
+    
+    <!-- Backgrounds -->
+    <color name="background_light">#F3E5F5</color> <!-- Very Light Purple/Pink -->
+    <color name="background_dark">#311B92</color> <!-- Dark Indigo/Purple -->
+    <color name="surface">#FFFFFF</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#7B1FA2</color> <!-- Purple Text -->
+    <color name="text_on_primary">#FFFFFF</color>
+    
+    <!-- Status colors -->
+    <color name="error">#C62828</color>
+    <color name="success">#2E7D32</color>
+
+    <!-- Adaptive Neon Card Colors -->
+    <color name="neon_card_background">#FFFFFF</color>
+    <color name="overlay_background">#EEFFFFFF</color>
+    
+    <!-- Sidebar Adaptive Colors -->
+    <color name="sidebar_start">#F3E5F5</color>
+    <color name="sidebar_center">#E1BEE7</color>
+</resources>

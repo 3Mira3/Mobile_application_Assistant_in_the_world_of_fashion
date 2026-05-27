@@ -1,0 +1,310 @@
+<resources>
+    <string name="app_name">Fashion World Assistant</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_history">History</string>
+    <string name="nav_catalog">Catalog</string>
+    <string name="nav_mixer">Mixer</string>
+    <string name="nav_stylists">Stylists</string>
+    <string name="nav_colors">Colors</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Home Page -->
+    <string name="home_welcome">Hello!</string>
+    <string name="home_subtitle">Welcome to your personal assistant in the world of fashion</string>
+    <string name="home_trend_title">Trend of the week</string>
+    <string name="home_trend_desc">Find out what\'s currently at the peak of popularity</string>
+    <string name="home_quick_access">Quick Access</string>
+    <string name="home_trend_default">Inspiring Style</string>
+    
+    <!-- History -->
+    <string name="history_title">Fashion Eras</string>
+    <string name="history_choose_epoch">Choose an Era</string>
+    <string name="history_all_looks">All Looks</string>
+    <string name="history_dresses">Dresses</string>
+    <string name="history_pants">Pants &amp; Skirts</string>
+    
+    <!-- Mixer / Smart Selection -->
+    <string name="mixer_title">Your Look</string>
+    <string name="mixer_upper">Upper Part</string>
+    <string name="mixer_lower">Lower Part</string>
+    <string name="mixer_add_upper">+ ADD UPPER</string>
+    <string name="mixer_add_lower">+ ADD LOWER</string>
+    <string name="mixer_create_look">Create Look</string>
+    <string name="mixer_smart_params">Smart Parameters</string>
+    <string name="mixer_your_style">Your style:</string>
+    <string name="mixer_gender_female">Female</string>
+    <string name="mixer_gender_male">Male</string>
+    <string name="mixer_season">Season:</string>
+    <string name="mixer_winter">Winter</string>
+    <string name="mixer_spring">Spring</string>
+    <string name="mixer_summer">Summer</string>
+    <string name="mixer_autumn">Autumn</string>
+    <string name="mixer_destination">Where are you going?</string>
+    <string name="mixer_work">Work</string>
+    <string name="mixer_party">Party</string>
+    <string name="mixer_walk">Walk</string>
+    <string name="mixer_gym">Gym</string>
+    <string name="mixer_meeting">Meeting</string>
+    <string name="mixer_mood">Your mood:</string>
+    <string name="mixer_mood_good">Great! 😊</string>
+    <string name="mixer_mood_bad">So-so... 😔</string>
+    <string name="mixer_smart_btn">🔥 SMART MIX</string>
+
+    <!-- Layout Specific Mixer Keys -->
+    <string name="mixer_upload_upper">Upload Upper Part</string>
+    <string name="mixer_upload_lower">Upload Lower Part</string>
+    <string name="mixer_generate">GENERATE LOOK</string>
+    <string name="mixer_ai_analyzing">AI is analyzing your wardrobe...</string>
+    
+    <!-- Smart Result Dialog -->
+    <string name="mixer_result_title">Your ideal look:</string>
+    <string name="smart_result_ready">Your smart look is ready!</string>
+    <string name="smart_result_cool">COOL!</string>
+    <string name="smart_result_location_placeholder">📍 City: Kyiv</string>
+    <string name="smart_result_mood_placeholder">Have a great day! 😊</string>
+    <string name="smart_result_details_placeholder">This look is perfect for your mood and destination.</string>
+    <string name="smart_result_msg_good_1">Have a nice day! 😊</string>
+    <string name="smart_result_msg_good_2">You look amazing today! ✨</string>
+    <string name="smart_result_msg_good_3">Great choice for a great mood! 💖</string>
+    <string name="smart_result_msg_bad_1">Don\'t be sad, everything will be fine! 🤗</string>
+    <string name="smart_result_msg_bad_2">This look will definitely cheer you up! 🌈</string>
+    <string name="smart_result_msg_bad_3">Smile, you are beautiful! 🌸</string>
+    <string name="smart_result_footer">Since it is currently %2$s in %1$s, we selected this look based on current Pexels Fashion trends.</string>
+
+    <!-- Weather Fashion Advice -->
+    <string name="advice_freezing">It\'s freezing today! ❄️ Make sure to add a warm coat and a scarf to your look.</string>
+    <string name="advice_cold">It\'s quite chilly outside. 🧥 We recommend layering: a sweater over a shirt would be perfect.</string>
+    <string name="advice_mild">Comfortable weather for a walk. 🌤️ A light blazer or cardigan will complement your style.</string>
+    <string name="advice_warm">Warm and pleasant! ☀️ Choose natural fabrics to feel free.</string>
+    <string name="advice_hot">It\'s real heat today! 🔥 Light shorts or a linen dress would be best.</string>
+
+    <!-- Stylists -->
+    <string name="stylists_header">Our Stylists</string>
+    <string name="stylist_appointment">Book an appointment</string>
+    <string name="stylists_list_label">Stylist list:</string>
+    <string name="stylists_fav_label">Your favorites:</string>
+    
+    <!-- Colors Screen -->
+    <string name="colors_magic">Magic of Color</string>
+    <string name="colors_diag_title">Color Diagnostics</string>
+    <string name="colors_diag_desc">Choose 2-3 colors to check the harmony of your future look:</string>
+    <string name="colors_diag_hint">*To choose a color shade - long press the required color</string>
+    <string name="colors_btn_run">RUN DIAGNOSTICS</string>
+    <string name="color_diag_min_colors">Select at least 2 colors</string>
+
+    <!-- Color Harmony Verdicts (EN) -->
+    <string name="color_verdict_urban_gothic">Urban Gothic / Minimalist</string>
+    <string name="color_verdict_soft_fresh">Soft &amp; Fresh Harmony</string>
+    <string name="color_verdict_base_contrast">Basic Contrast</string>
+    <string name="color_verdict_monochrome">Monochrome Elegance</string>
+    <string name="color_verdict_analogous">Analogous Harmony</string>
+    <string name="color_verdict_contrast">Striking Contrast</string>
+    <string name="color_verdict_risky">Risky Combination</string>
+    <string name="color_verdict_balanced">Balanced Mix</string>
+    <string name="color_verdict_triad">Color Triad / Complex Look</string>
+    <string name="color_verdict_creative">Creative Mix</string>
+
+    <!-- Color Harmony Explanations (EN) -->
+    <string name="color_exp_urban_gothic">Black and grey are the foundation of modern urban style. This combination looks simultaneously strict and stylish.</string>
+    <string name="color_exp_soft_fresh">This combination radiates lightness and romance.</string>
+    <string name="color_exp_monochrome">Combining several neutral colors is a sign of sophisticated taste and calm confidence.</string>
+    <string name="color_exp_analogous">Your colors are neighbors. This creates a smooth transition that looks very expensive and intelligent.</string>
+    <string name="color_exp_base_contrast">Using the neutral color (%1$s) allows the bright one (%2$s) to fully reveal itself.</string>
+    <string name="color_adv_base_contrast">This is a universal choice for any age. Your look will attract attention thanks to the purity of the color %1$s.</string>
+    <string name="color_exp_contrast">This is a combination of opposites. Your look will definitely attract attention and interested glances.</string>
+    <string name="color_exp_risky">These colors are in a zone of visual conflict. They may appear "muddy" or too sharp next to each other.</string>
+    <string name="color_exp_balanced">These colors create an interesting visual play that emphasizes your individuality.</string>
+    <string name="color_exp_triad">A three-color look requires mastery. You have chosen a palette that looks complete and professional.</string>
+    <string name="color_exp_creative">You have chosen a bold palette that sets you apart from the crowd. This is the choice of creative personalities.</string>
+
+    <!-- Color Harmony Advice (EN) -->
+    <string name="color_adv_urban_gothic">We recommend adding a mesh long-sleeve under a black T-shirt. For the look — an oversized grey coat with black loafers.</string>
+    <string name="color_adv_soft_fresh">For the look: a pink dress/polo with white sneakers or a shirt.</string>
+    <string name="color_adv_monochrome">Try playing with volumes: wide trousers and a fitted top. Add a quality leather belt or watch.</string>
+    <string name="color_adv_risky">• **How to fix:** Try adding white or light grey to create "breathing room" between them.</string>
+    <string name="color_adv_creative">To make the look harmonious, choose one dominant color. Let the rest appear in details.</string>
+    <string name="color_adv_wardobe_header">\n\n• **Wardrobe options:**\n</string>
+    <string name="colors_art_mixing">Art of Mixing</string>
+    <string name="colors_show_last">Show last result</string>
+    <string name="colors_result_title">Analysis Result</string>
+    <string name="colors_stylist_advice">Stylist advice:</string>
+    <string name="colors_palette_hint">Click on the circle to expand</string>
+    <string name="colors_hide_theory">Hide theory</string>
+    <string name="colors_about_palette">About the palette</string>
+    <string name="colors_essence_title">Essence of color milestones</string>
+    <string name="colors_combo_title">Why do they match?</string>
+
+    <!-- Color Theory Keys -->
+    <string name="color_intro">The palette is your guide to the world of harmony. Each color carries its own mood and energy.</string>
+    <string name="color_essence">The essence of color lies in its temperature, saturation, and importance for your appearance type.</string>
+    <string name="color_combos">Successful combinations are built on contrast or kinship of shades, which creates a complete image.</string>
+    <string name="color_mixing">Mixing colors is an art that allows you to create unique visual effects.</string>
+
+    <!-- Profile & Settings -->
+    <string name="profile_title">My Profile</string>
+    <string name="profile_subtitle">App Settings</string>
+    <string name="profile_section_app">APPLICATION</string>
+    <string name="profile_section_feedback">FEEDBACK</string>
+    <string name="profile_language">App Language</string>
+    <string name="profile_theme">App Theme</string>
+    <string name="profile_city">Current City</string>
+    <string name="profile_rate">Rate the App</string>
+    <string name="profile_contact">Contact Developer</string>
+    <string name="profile_version">App Version: 2.0.26 (Neon Edition)</string>
+    <string name="profile_account_google">Sign in with Google</string>
+    <string name="profile_account_connected">Connected:</string>
+    
+    <!-- Theme Selection -->
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+    <string name="theme_dialog_title">Select Theme</string>
+
+    <!-- Language Selection -->
+    <string name="lang_ukrainian">Ukrainian</string>
+    <string name="lang_english">English</string>
+    <string name="lang_dialog_title">Select Language</string>
+    <string name="lang_toast_ua">Language changed to Ukrainian</string>
+    <string name="lang_toast_en">Language changed to English</string>
+
+    <!-- City/Country Dialog -->
+    <string name="dialog_country_title">Country</string>
+    <string name="dialog_city_title">City</string>
+    <string name="btn_save">Save</string>
+
+    <!-- Rate Dialog -->
+    <string name="dialog_rate_title">Rate the App</string>
+    <string name="dialog_rate_message">Do you like our app? Please leave a review on the Play Store!</string>
+    <string name="dialog_rate_yes">Rate now</string>
+    <string name="dialog_rate_no">Later</string>
+
+    <!-- Contact Dialog -->
+    <string name="dialog_contact_title">Contact</string>
+    <string name="dialog_contact_message">Contact us at: support@fashionworld.com</string>
+
+    <!-- Trends Dialog -->
+    <string name="trends_not_found">Trends not found</string>
+    <string name="trends_load_error">Load error: %1$s</string>
+    <string name="trends_author_prefix">by %1$s</string>
+    <string name="trends_inspiration">Fashion Inspiration</string>
+
+    <!-- Toasts & Misc -->
+    <string name="toast_add_photos">Add at least one photo for upper and lower parts</string>
+    <string name="toast_select_params">Please select all parameters (gender, season, destination, and mood)</string>
+    <string name="profile_fill_alert_title">Profile not completed</string>
+    <string name="profile_fill_alert_msg">Please specify your city and country in profile settings for accurate look selection.</string>
+    <string name="btn_to_settings">To Settings</string>
+    <string name="btn_later">Later</string>
+
+    <string name="catalog_title">Catalog</string>
+
+    <!-- Centuries -->
+    <string name="century_ancient">Ancient Times &amp; Middle Ages</string>
+    <string name="century_renaissance">Renaissance &amp; Baroque</string>
+    <string name="century_xviii">18th Century (Rococo)</string>
+    <string name="century_xix">19th Century (Victorian Era)</string>
+    <string name="century_xx_early">20th (Early: 1900-1930)</string>
+    <string name="century_xx_mid">20th (Mid: 1940-1960)</string>
+    <string name="century_xx_late">20th (Late: 1970-1990)</string>
+    <string name="century_xxi">21st Century (Modernity)</string>
+
+    <!-- Parts -->
+    <string name="part_tops">T-shirts &amp; Blouses</string>
+    <string name="part_outerwear">Outerwear (Coats, Furs)</string>
+    <string name="part_hats">Headwear</string>
+    <string name="part_accessories">Accessories (Gloves)</string>
+
+    <!-- Looks -->
+    <string name="look_1_title">Ancient Egyptian Kalasiris</string>
+    <string name="look_1_desc">Classic tight-fitting sundress with straps.</string>
+    <string name="look_1_full">The basis of the female wardrobe of the New Kingdom. It was made from a rectangular linen cloth wrapped around the body.</string>
+    
+    <string name="look_2_title">Ancient Greek Peplos</string>
+    <string name="look_2_desc">Heavy wool garment fixed with fibulae.</string>
+    <string name="look_2_full">Archaic Greek clothing. A large rectangle of wool folded in half and belted.</string>
+
+    <string name="look_3_title">Roman Stola</string>
+    <string name="look_3_desc">Symbolic attire of a Roman matron.</string>
+    <string name="look_3_full">Mandatory clothing for married Roman citizens. It had a wide border (institia).</string>
+
+    <string name="look_4_title">Byzantine Dalmatic</string>
+    <string name="look_4_desc">Luxurious tunic with wide sleeves.</string>
+    <string name="look_4_full">Byzantine fashion combined the Roman tunic with Eastern luxury. The Dalmatic was sewn from heavy silk.</string>
+
+    <string name="look_5_title">Medieval Houppelande</string>
+    <string name="look_5_desc">Voluminous ceremonial dress with a high collar.</string>
+    <string name="look_5_full">The pinnacle of 14th-15th century fashion. Required a huge amount of expensive fabric.</string>
+
+    <string name="look_6_title">Egyptian Shendyt</string>
+    <string name="look_6_desc">Men\'s loincloth made of pleated linen.</string>
+    <string name="look_6_full">The shendyt was a key element of male costume in Ancient Egypt.</string>
+
+    <string name="look_7_title">Persian Anaxyrides</string>
+    <string name="look_7_desc">Eastern-style trousers for horse riding.</string>
+    <string name="look_7_full">On Greek vases, Persians are depicted in narrow patterned trousers — anaxyrides.</string>
+
+    <string name="look_8_title">Braccae</string>
+    <string name="look_8_desc">Gallic and Germanic legionary trousers.</string>
+    <string name="look_8_full">Romans initially despised trousers but appreciated their protection during wars in the north.</string>
+
+    <string name="look_9_title">Hose (14th Century)</string>
+    <string name="look_9_desc">Separate stocking-trousers that tightly fitted the legs.</string>
+    <string name="look_9_full">In the High Middle Ages, men wore hose — two separate legs.</string>
+
+    <string name="look_10_title">Medieval Braies</string>
+    <string name="look_10_desc">Under-trousers made of white linen.</string>
+    <string name="look_10_full">Braies were the prototype of modern underwear. They had a drawstring for a belt.</string>
+
+    <!-- Stylist Data -->
+    <string name="stylist_1_name">Elena Modna</string>
+    <string name="stylist_1_bio">Expert in ancient style and modern minimalism. Knows everything about how to wear a tunic in 2026.</string>
+    
+    <string name="stylist_2_name">Marina Renaissance</string>
+    <string name="stylist_2_bio">Master of complex looks and layering. Will help you look like a Da Vinci masterpiece.</string>
+    
+    <string name="stylist_3_name">Katya Style</string>
+    <string name="stylist_3_bio">Queen of accessories and sophisticated lines. Specializes in evening dresses and corsets.</string>
+    
+    <string name="stylist_4_name">Victor Vintage</string>
+    <string name="stylist_4_bio">History and classic suit enthusiast. Will create a timeless look for you.</string>
+
+    <string-array name="countries_array">
+        <item>Ukraine</item>
+        <item>Poland</item>
+        <item>Germany</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Spain</item>
+        <item>United Kingdom</item>
+        <item>USA</item>
+        <item>Canada</item>
+        <item>Japan</item>
+    </string-array>
+
+    <string-array name="cities_array">
+        <item>Kyiv</item>
+        <item>Kharkiv</item>
+        <item>Odesa</item>
+        <item>Dnipro</item>
+        <item>Lviv</item>
+        <item>Zaporizhzhia</item>
+        <item>Kryvyi Rih</item>
+        <item>Mykolaiv</item>
+        <item>Vinnytsia</item>
+        <item>Chernihiv</item>
+        <item>Poltava</item>
+        <item>Kherson</item>
+        <item>Cherkasy</item>
+        <item>Khmelnytskyi</item>
+        <item>Chernivtsi</item>
+        <item>Zhytomyr</item>
+        <item>Sumy</item>
+        <item>Rivne</item>
+        <item>Ivano-Frankivsk</item>
+        <item>Ternopil</item>
+        <item>Lutsk</item>
+        <item>Uzhhorod</item>
+    </string-array>
+</resources>

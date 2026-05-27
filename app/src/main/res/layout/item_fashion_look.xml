@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:clickable="true"
+    android:focusable="true"
+    android:stateListAnimator="@animator/stylist_card_animator">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_neon_card"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/image_look"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:clipToOutline="true" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Назва образу"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:fontFamily="@font/comic_sans"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="Опис короткий тут буде..."
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:fontFamily="@font/comic_sans" />
+
+        <TextView
+            android:id="@+id/text_full_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="12dp"
+            android:text="Повна інформація..."
+            android:textSize="12sp"
+            android:textColor="@color/text_primary"
+            android:visibility="gone"
+            android:fontFamily="@font/comic_sans" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
