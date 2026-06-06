@@ -25,6 +25,8 @@ import stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.network.Pe
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.LocaleHelper
+import stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.BuildConfig
+
 /* ===== GEMINI CHAT IMPORTS — ЗАКОМЕНТОВАНО =====
 import android.os.Handler
 import android.os.Looper
@@ -60,7 +62,7 @@ class MixerFragment : Fragment() {
     private val lowerImages = mutableListOf<Uri>()
 
     /* ===== GEMINI CHAT FIELDS — ЗАКОМЕНТОВАНО =====
-    private val GEMINI_API_KEY = "AQ.Ab8RN6IcnPDbK6ymasKTQhB_UROS3PxNrupHnVNz8Eft69cFEQ"
+    private val GEMINI_API_KEY = BuildConfig.GEMINI_API_KEY
 
     private val chatMessages = mutableListOf<ChatMessage>()
     private lateinit var chatAdapter: ChatAdapter
@@ -98,7 +100,7 @@ class MixerFragment : Fragment() {
         .build()
         .create(PexelsService::class.java)
 
-    private val PEXELS_KEY = "cAtmAqzCpcHOjzRLSNSpc7uFTe7BPWEFTaWnbVBMiuuIEw5Hawy46n5X"
+    private val PEXELS_KEY = BuildConfig.PEXELS_API_KEY
 
     // Image Pickers
     private val pickUpperMedia = registerForActivityResult(ActivityResultContracts.PickMultipleVisualMedia(5)) { uris ->
