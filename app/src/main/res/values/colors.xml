@@ -22,6 +22,8 @@
     <color name="error">#C62828</color>
     <color name="success">#2E7D32</color>
 
+    <color name="popup_desc_text">#FF69B4</color>
+
     <!-- Adaptive Neon Card Colors -->
     <color name="neon_card_background">#FFFFFF</color>
     <color name="overlay_background">#EEFFFFFF</color>

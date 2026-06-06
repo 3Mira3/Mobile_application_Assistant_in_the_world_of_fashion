@@ -192,6 +192,18 @@
                     android:textColor="@color/text_primary"
                     android:textSize="14sp"
                     android:textIsSelectable="true" />
+
+                <TextView
+                    android:id="@+id/text_diagnostic_hint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_result_advice"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/comic_sans"
+                    android:text="@string/colors_diagnostic_click_hint"
+                    android:textColor="#BC13FE"
+                    android:textSize="13sp"
+                    android:textStyle="italic" />
             </RelativeLayout>
         </com.google.android.material.card.MaterialCardView>
 

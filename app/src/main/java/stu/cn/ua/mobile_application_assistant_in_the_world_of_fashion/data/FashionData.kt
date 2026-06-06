@@ -57,24 +57,25 @@ object FashionDataSource {
 
     val looks = listOf(
         // DRESSES (ancient_medieval)
-        FashionLook("1", "ancient_medieval", "dresses", R.string.look_1_title, R.string.look_1_desc, R.string.look_1_full, android.R.drawable.ic_menu_gallery),
-        FashionLook("2", "ancient_medieval", "dresses", R.string.look_2_title, R.string.look_2_desc, R.string.look_2_full, android.R.drawable.ic_menu_gallery),
-        FashionLook("3", "ancient_medieval", "dresses", R.string.look_3_title, R.string.look_3_desc, R.string.look_3_full, android.R.drawable.ic_menu_gallery),
-        FashionLook("4", "ancient_medieval", "dresses", R.string.look_4_title, R.string.look_4_desc, R.string.look_4_full, android.R.drawable.ic_menu_gallery),
-        FashionLook("5", "ancient_medieval", "dresses", R.string.look_5_title, R.string.look_5_desc, R.string.look_5_full, android.R.drawable.ic_menu_gallery),
+        FashionLook("1", "ancient_medieval", "dresses", R.string.look_1_title, R.string.look_1_desc, R.string.look_1_full, R.drawable.look_kalaziris),
+        FashionLook("2", "ancient_medieval", "dresses", R.string.look_2_title, R.string.look_2_desc, R.string.look_2_full, R.drawable.look_greek_peplos),
+        FashionLook("3", "ancient_medieval", "dresses", R.string.look_3_title, R.string.look_3_desc, R.string.look_3_full, R.drawable.look_roman_stola),
+        FashionLook("4", "ancient_medieval", "dresses", R.string.look_4_title, R.string.look_4_desc, R.string.look_4_full, R.drawable.look_byzantine_dalmatica),
+        FashionLook("5", "ancient_medieval", "dresses", R.string.look_5_title, R.string.look_5_desc, R.string.look_5_full, R.drawable.look_medieval_houppelande),
 
         // PANTS & SKIRTS (ancient_medieval)
-        FashionLook("6", "ancient_medieval", "pants_skirts", R.string.look_6_title, R.string.look_6_desc, R.string.look_6_full, android.R.drawable.ic_menu_gallery),
-        FashionLook("7", "ancient_medieval", "pants_skirts", R.string.look_7_title, R.string.look_7_desc, R.string.look_7_full, android.R.drawable.ic_menu_gallery),
-        FashionLook("8", "ancient_medieval", "pants_skirts", R.string.look_8_title, R.string.look_8_desc, R.string.look_8_full, android.R.drawable.ic_menu_gallery),
-        FashionLook("9", "ancient_medieval", "pants_skirts", R.string.look_9_title, R.string.look_9_desc, R.string.look_9_full, android.R.drawable.ic_menu_gallery),
-        FashionLook("10", "ancient_medieval", "pants_skirts", R.string.look_10_title, R.string.look_10_desc, R.string.look_10_full, android.R.drawable.ic_menu_gallery)
+        FashionLook("6", "ancient_medieval", "pants_skirts", R.string.look_6_title, R.string.look_6_desc, R.string.look_6_full, R.drawable.look_egyptian_shendyt),
+        FashionLook("7", "ancient_medieval", "pants_skirts", R.string.look_7_title, R.string.look_7_desc, R.string.look_7_full, R.drawable.look_persian_anaxyrides),
+        FashionLook("8", "ancient_medieval", "pants_skirts", R.string.look_8_title, R.string.look_8_desc, R.string.look_8_full, R.drawable.look_braccae),
+        FashionLook("9", "ancient_medieval", "pants_skirts", R.string.look_9_title, R.string.look_9_desc, R.string.look_9_full, R.drawable.look_chausses_14_century),
+        FashionLook("10", "ancient_medieval", "pants_skirts", R.string.look_10_title, R.string.look_10_desc, R.string.look_10_full, R.drawable.look_medieval_braies)
     )
 
     val stylists = listOf(
-        Stylist("s1", R.string.stylist_1_name, R.string.stylist_1_bio, R.drawable.stylist_4, "https://calendly.com/style-elena"),
-        Stylist("s2", R.string.stylist_2_name, R.string.stylist_2_bio, R.drawable.stylist_2, "https://calendly.com/style-mark"),
-        Stylist("s3", R.string.stylist_3_name, R.string.stylist_3_bio, R.drawable.stylist_3, "https://calendly.com/style-katya"),
-        Stylist("s4", R.string.stylist_4_name, R.string.stylist_4_bio, R.drawable.stylist_1, "https://calendly.com/style-viktor")
+        Stylist("s1", R.string.stylist_1_name, R.string.stylist_1_bio, R.drawable.stylist_1, "https://www.instagram.com/sweetjumble/"),
+        Stylist("s2", R.string.stylist_2_name, R.string.stylist_2_bio, R.drawable.stylist_2, "https://tshylan.com/"),
+        Stylist("s3", R.string.stylist_3_name, R.string.stylist_3_bio, R.drawable.stylist_3, "https://www.instagram.com/yana_pidopryhora/"),
+        Stylist("s4", R.string.stylist_4_name, R.string.stylist_4_bio, R.drawable.stylist_4, "https://www.instagram.com/diana.sydorovych/"),
+        Stylist("s5", R.string.stylist_5_name, R.string.stylist_5_bio, R.drawable.stylist_5, "https://www.instagram.com/anna.kobzar/")
     )
 }

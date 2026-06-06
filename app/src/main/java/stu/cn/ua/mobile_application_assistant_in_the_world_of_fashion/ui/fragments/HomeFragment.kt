@@ -9,25 +9,17 @@ import androidx.navigation.fragment.findNavController
 import android.widget.Toast
 import stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.R
 import stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.databinding.FragmentHomeBinding
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import com.bumptech.glide.Glide
+import stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.network.TrendFetcher
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
-import com.bumptech.glide.Glide
-import stu.cn.ua.mobile_application_assistant_in_the_world_of_fashion.network.UnsplashService
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    private val unsplashService = Retrofit.Builder()
-        .baseUrl("https://api.unsplash.com/")
-        .addConverterFactory(GsonConverterFactory.create())
-        .build()
-        .create(UnsplashService::class.java)
 
-    private val UNSPLASH_KEY = "JnDZL7ShcsOEjN-FnI5MkDsnJLxLKu-IEvtwa03xSog"
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -47,13 +39,19 @@ class HomeFragment : Fragment() {
     private fun loadMainTrend() {
         lifecycleScope.launch {
             try {
-                val photo = unsplashService.getRandomFashionPhoto()
-                Glide.with(this@HomeFragment)
-                    .load(photo.urls.regular)
-                    .centerCrop()
-                    .into(binding.ivTrendMain)
-                
-                binding.tvTrendDesc.text = photo.alt_description?.replaceFirstChar { it.uppercase() } ?: getString(R.string.home_trend_default)
+                val trends = TrendFetcher.fetchTrends()
+                if (trends.isNotEmpty()) {
+                    val trend = trends.first()
+                    if (trend.imageUrl != null) {
+                        Glide.with(this@HomeFragment)
+                            .load(trend.imageUrl)
+                            .centerCrop()
+                            .into(binding.ivTrendMain)
+                    }
+                    binding.tvTrendDesc.text = trend.title
+                } else {
+                    binding.tvTrendDesc.text = getString(R.string.home_trend_default)
+                }
             } catch (e: Exception) {
                 Toast.makeText(requireContext(), getString(R.string.trends_load_error, e.message), Toast.LENGTH_LONG).show()
             }

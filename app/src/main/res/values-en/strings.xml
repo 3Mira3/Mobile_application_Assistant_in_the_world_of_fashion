@@ -131,16 +131,17 @@
     <string name="colors_result_title">Analysis Result</string>
     <string name="colors_stylist_advice">Stylist advice:</string>
     <string name="colors_palette_hint">Click on the circle to expand</string>
+    <string name="colors_diagnostic_click_hint">*To see more detailed information - click on the highlighted word</string>
     <string name="colors_hide_theory">Hide theory</string>
     <string name="colors_about_palette">About the palette</string>
     <string name="colors_essence_title">Essence of color milestones</string>
     <string name="colors_combo_title">Why do they match?</string>
 
     <!-- Color Theory Keys -->
-    <string name="color_intro">The palette is your guide to the world of harmony. Each color carries its own mood and energy.</string>
-    <string name="color_essence">The essence of color lies in its temperature, saturation, and importance for your appearance type.</string>
-    <string name="color_combos">Successful combinations are built on contrast or kinship of shades, which creates a complete image.</string>
-    <string name="color_mixing">Mixing colors is an art that allows you to create unique visual effects.</string>
+    <string name="color_intro">The palette is your main tool for creating style. Colors affect psychological perception: warm (red, yellow) evoke energy and passion, cold (blue, green) act soothingly and symbolize stability. Choosing a color determines not only your look but also your mood.</string>
+    <string name="color_essence">Each color has three characteristics: hue (name of the color), saturation (brightness or mutedness), and temperature (warm or cold). Knowing your color type (Winter, Spring, Summer, Autumn), you can choose ideal base colors that emphasize your natural beauty.</string>
+    <string name="color_combos">Ideal combinations can be created using the Itten color wheel. Basic schemes: monochrome (shades of one color), analogous (colors next to each other), complementary (opposite colors for strong contrast), and triadic (three equidistant colors).</string>
+    <string name="color_mixing" formatted="false">The main rule: use no more than three main colors in one look. The 60-30-10 formula works best: 60% — base color (e.g., suit), 30% — secondary (shirt), 10% — accent (tie, bag, shoes, or scarf).</string>
 
     <!-- Profile & Settings -->
     <string name="profile_title">My Profile</string>
@@ -159,7 +160,19 @@
     <!-- Theme Selection -->
     <string name="theme_light">Light</string>
     <string name="theme_dark">Dark</string>
-    <string name="theme_system">System</string>
+
+    <string name="clothing_bluzka_name">Blouse</string>
+    <string name="clothing_bluzka_desc_ua">Легка жіноча блузка з шовку, ідеальна для весняних образів.</string>
+    <string name="clothing_bluzka_desc_en">A light women\'s silk blouse, perfect for spring outfits.</string>
+    <string name="clothing_kurtka_name">Jacket</string>
+    <string name="clothing_kurtka_desc_ua">Стильна зимова куртка з утеплювачем, підходить для холодної погоди.</string>
+    <string name="clothing_kurtka_desc_en">A stylish winter jacket with insulation, suitable for cold weather.</string>
+    <string name="clothing_kedі_name">Sneakers</string>
+    <string name="clothing_kedі_desc_ua">Трендові кеди з тканинною підкладкою, підходять для кежуал стилю.</string>
+    <string name="clothing_kedі_desc_en">Trendy sneakers with fabric lining, suitable for casual style.</string>
+    <string name="clothing_loфері_name">Loafers</string>
+    <string name="clothing_loфері_desc_ua">Класичні шкіряні лофери, підходять для офісу.</string>
+    <string name="clothing_loфері_desc_en">Classic leather loafers, suitable for office wear.</string>
     <string name="theme_dialog_title">Select Theme</string>
 
     <!-- Language Selection -->
@@ -258,17 +271,20 @@
     <string name="look_10_full">Braies were the prototype of modern underwear. They had a drawstring for a belt.</string>
 
     <!-- Stylist Data -->
-    <string name="stylist_1_name">Elena Modna</string>
-    <string name="stylist_1_bio">Expert in ancient style and modern minimalism. Knows everything about how to wear a tunic in 2026.</string>
+    <string name="stylist_1_name">Illarion Pavlyuk (SweetJumble)</string>
+    <string name="stylist_1_bio">One of the leading experts who stood at the origins of personal styling development in Ukraine.</string>
     
-    <string name="stylist_2_name">Marina Renaissance</string>
-    <string name="stylist_2_bio">Master of complex looks and layering. Will help you look like a Da Vinci masterpiece.</string>
+    <string name="stylist_2_name">Tetiana Ursul</string>
+    <string name="stylist_2_bio">Renowned expert in men\'s image, who forms dozens of wardrobes annually.</string>
     
-    <string name="stylist_3_name">Katya Style</string>
-    <string name="stylist_3_bio">Queen of accessories and sophisticated lines. Specializes in evening dresses and corsets.</string>
+    <string name="stylist_3_name">Yana Pidopryhora</string>
+    <string name="stylist_3_bio">Certified specialist and member of the Association of Stylists of Ukraine, specializing in personal capsules and conscious shopping.</string>
     
-    <string name="stylist_4_name">Victor Vintage</string>
-    <string name="stylist_4_bio">History and classic suit enthusiast. Will create a timeless look for you.</string>
+    <string name="stylist_4_name">Diana Sydorovych</string>
+    <string name="stylist_4_bio">Sought-after image maker who helps create a complete and functional look.</string>
+
+    <string name="stylist_5_name">Anna Kobzar</string>
+    <string name="stylist_5_bio">Stylist, TV presenter, and designer who works with both individual clients and Ukrainian brands.</string>
 
     <string-array name="countries_array">
         <item>Ukraine</item>
@@ -307,4 +323,62 @@
         <item>Lutsk</item>
         <item>Uzhhorod</item>
     </string-array>
+
+    <!-- Gemini Chat -->
+    <string name="chat_banner_title">🤖 Chat with Gemini AI Stylist</string>
+    <string name="chat_banner_desc">Having trouble choosing a look? Get instant advice from our personal AI Stylist!</string>
+    <string name="chat_banner_btn">Start Chat</string>
+    <string name="chat_header_title">AI Stylist</string>
+    <string name="chat_input_hint">Ask about fashion or request to generate a look...</string>
+    <string name="chat_new_chat">New Chat</string>
+    <string name="chat_history_title">Chat History</string>
+    <string name="chat_no_history">No chat history yet</string>
+    <string name="chat_welcome_message">Hello! I am your personal AI Stylist. I can recommend outfit pairings, tell you about trends, or generate look images. Try writing: "Generate a evening outfit"</string>
+    <string name="chat_error_failed">Failed to connect to AI. Please check your connection.</string>
+
+    <!-- Color Names and Tips -->
+    <string name="color_name_red">Red</string>
+    <string name="color_tip_red">dress/shirt, coat, accent shoes</string>
+    <string name="color_name_orange">Orange</string>
+    <string name="color_tip_orange">sweater/hoodie, bright accessories</string>
+    <string name="color_name_yellow">Yellow</string>
+    <string name="color_tip_yellow">accent bag/backpack, blouse/polo</string>
+    <string name="color_name_lime">Lime</string>
+    <string name="color_tip_lime">sportswear, neon sneakers/laces</string>
+    <string name="color_name_green">Green</string>
+    <string name="color_tip_green">cargo pants/chinos, knitwear</string>
+    <string name="color_name_emerald">Emerald</string>
+    <string name="color_tip_emerald">suit, jewelry/watch</string>
+    <string name="color_name_cyan">Light Blue</string>
+    <string name="color_tip_cyan">shirt, sundress/denim jacket</string>
+    <string name="color_name_blue">Blue</string>
+    <string name="color_tip_blue">business jacket/blazer, jeans</string>
+    <string name="color_name_indigo">Indigo</string>
+    <string name="color_tip_indigo">cardigan, evening pants/skirt</string>
+    <string name="color_name_violet">Violet</string>
+    <string name="color_tip_violet">scarf/tie, coat</string>
+    <string name="color_name_magenta">Magenta</string>
+    <string name="color_tip_magenta">accent top, jewelry</string>
+    <string name="color_name_pink">Pink</string>
+    <string name="color_tip_pink">t-shirt/blouse, accessories</string>
+    <string name="color_name_white">White</string>
+    <string name="color_tip_white">basic shirt/t-shirt, white sneakers</string>
+    <string name="color_name_black">Black</string>
+    <string name="color_tip_black">mesh long-sleeve, jacket/leather jacket, loafers</string>
+    <string name="color_name_grey">Grey</string>
+    <string name="color_tip_grey">oversized hoodie, woolen coat, pants</string>
+    <string name="color_name_brown">Brown</string>
+    <string name="color_tip_brown">leather jacket, boots</string>
+    <string name="color_name_beige">Beige</string>
+    <string name="color_tip_beige">trench coat, cashmere jumper, chinos</string>
+    <string name="color_name_coffee">Coffee</string>
+    <string name="color_tip_coffee">corduroy pants, belt, coats</string>
+
+    <string name="color_shades_pastel">You have chosen a pastel palette. This creates a very gentle, "marshmallow" look that is perfect for summer or romantic events.</string>
+    <string name="color_shades_dark">Deep and dark shades add drama and status to the look. This is a great choice for an evening out or business "Power Dressing" style.</string>
+    <string name="color_shades_contrast">The combination of very light and very dark shades creates maximum contrast, making the look dynamic and modern.</string>
+    <string name="color_shades_notice">● **Notes on shades:**
+</string>
+    <string name="color_recommend">we recommend choosing</string>
+
 </resources>

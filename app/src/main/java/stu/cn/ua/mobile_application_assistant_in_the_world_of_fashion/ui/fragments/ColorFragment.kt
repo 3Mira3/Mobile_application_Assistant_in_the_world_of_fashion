@@ -38,7 +38,11 @@ class ColorFragment : Fragment() {
             binding.btnShowLastResult.visibility = View.VISIBLE
             binding.textResultVerdict.text = lastVerdict
             binding.textResultExplanation.text = lastExplanation
-            binding.textResultAdvice.text = lastAdvice
+            val lastAdviceStr = lastAdvice ?: ""
+            val formattedAdvice = lastAdviceStr
+                .replace(Regex("\\*\\*(.*?)\\*\\*"), "<b>$1</b>")
+                .replace("\n", "<br>")
+            binding.textResultAdvice.text = androidx.core.text.HtmlCompat.fromHtml(formattedAdvice, androidx.core.text.HtmlCompat.FROM_HTML_MODE_COMPACT)
         }
 
         binding.btnShowLastResult.setOnClickListener {
@@ -88,24 +92,24 @@ class ColorFragment : Fragment() {
 
     private val selectedColors = mutableSetOf<FashionColor>()
     private val allColors = listOf(
-        FashionColor("Червоний", "#FF0000", 0, "сукня/сорочка, пальто, акцентне взуття"),
-        FashionColor("Помаранчевий", "#FF8C00", 30, "светр/худі, яскраві аксесуари"),
-        FashionColor("Жовтий", "#FFD700", 60, "акцентна сумка/рюкзак, блуза/поло"),
-        FashionColor("Лайм", "#ADFF2F", 90, "спортивний одяг, неонові кеди/шнурки"),
-        FashionColor("Зелений", "#008000", 120, "штани-карго/чіноси, трикотаж"),
-        FashionColor("Смарагдовий", "#50C878", 150, "костюм, прикраси/годинник"),
-        FashionColor("Блакитний", "#00BFFF", 180, "сорочка, сарафан/джинсова куртка"),
-        FashionColor("Синій", "#0000FF", 210, "діловий піджак/блейзер, джинси"),
-        FashionColor("Індиго", "#4B0082", 240, "кардиган, вечірні штани/спідниця"),
-        FashionColor("Фіолетовий", "#800080", 270, "хустка/краватка, пальто"),
-        FashionColor("Пурпуровий", "#FF00FF", 300, "акцентний топ, біжутерія"),
-        FashionColor("Рожевий", "#FF69B4", 330, "футболка/блуза, аксесуари"),
-        FashionColor("Білий", "#FFFFFF", -1, "базова сорочка/футболка, білі кеди"),
-        FashionColor("Чорний", "#000000", -2, "сітчастий лонгслів (mesh), жакет/косуха, лофери"),
-        FashionColor("Сірий", "#808080", -3, "худі оверсайз, вовняне пальто, штани"),
-        FashionColor("Коричневий", "#8B4513", -4, "шкіряна куртка, черевики/чоботи"),
-        FashionColor("Бежевий", "#F5F5DC", -5, "тренч, кашеміровий джемпер, чіноси"),
-        FashionColor("Кавовий", "#6F4E37", -6, "вельветові штани, ремінь, пальта")
+        FashionColor("red", "#FF0000", 0, R.string.color_name_red, R.string.color_tip_red),
+        FashionColor("orange", "#FF8C00", 30, R.string.color_name_orange, R.string.color_tip_orange),
+        FashionColor("yellow", "#FFD700", 60, R.string.color_name_yellow, R.string.color_tip_yellow),
+        FashionColor("lime", "#ADFF2F", 90, R.string.color_name_lime, R.string.color_tip_lime),
+        FashionColor("green", "#008000", 120, R.string.color_name_green, R.string.color_tip_green),
+        FashionColor("emerald", "#50C878", 150, R.string.color_name_emerald, R.string.color_tip_emerald),
+        FashionColor("cyan", "#00BFFF", 180, R.string.color_name_cyan, R.string.color_tip_cyan),
+        FashionColor("blue", "#0000FF", 210, R.string.color_name_blue, R.string.color_tip_blue),
+        FashionColor("indigo", "#4B0082", 240, R.string.color_name_indigo, R.string.color_tip_indigo),
+        FashionColor("violet", "#800080", 270, R.string.color_name_violet, R.string.color_tip_violet),
+        FashionColor("magenta", "#FF00FF", 300, R.string.color_name_magenta, R.string.color_tip_magenta),
+        FashionColor("pink", "#FF69B4", 330, R.string.color_name_pink, R.string.color_tip_pink),
+        FashionColor("white", "#FFFFFF", -1, R.string.color_name_white, R.string.color_tip_white),
+        FashionColor("black", "#000000", -2, R.string.color_name_black, R.string.color_tip_black),
+        FashionColor("grey", "#808080", -3, R.string.color_name_grey, R.string.color_tip_grey),
+        FashionColor("brown", "#8B4513", -4, R.string.color_name_brown, R.string.color_tip_brown),
+        FashionColor("beige", "#F5F5DC", -5, R.string.color_name_beige, R.string.color_tip_beige),
+        FashionColor("coffee", "#6F4E37", -6, R.string.color_name_coffee, R.string.color_tip_coffee)
     )
 
     private fun setupColorDiagnostic() {
@@ -131,7 +135,7 @@ class ColorFragment : Fragment() {
             setCardBackgroundColor(android.graphics.Color.parseColor(color.hex))
             
             // RESTORE SELECTION
-            if (savedSelectedNames.contains(color.name)) {
+            if (savedSelectedNames.contains(color.id)) {
                 selectedColors.add(color)
                 strokeWidth = (4 * resources.displayMetrics.density).toInt()
             } else {
@@ -139,7 +143,7 @@ class ColorFragment : Fragment() {
             }
 
             strokeColor = android.graphics.Color.parseColor("#BC13FE")
-            tag = color.name 
+            tag = color.id 
             isClickable = true
             isFocusable = true
             
@@ -156,15 +160,15 @@ class ColorFragment : Fragment() {
     }
 
     private fun toggleSelection(card: com.google.android.material.card.MaterialCardView, color: FashionColor) {
-        val existing = selectedColors.find { it.name == color.name }
+        val existing = selectedColors.find { it.id == color.id }
         if (existing != null) {
             selectedColors.remove(existing)
-            savedSelectedNames.remove(color.name)
+            savedSelectedNames.remove(color.id)
             card.strokeWidth = 0
         } else {
             if (selectedColors.size < 3) {
                 selectedColors.add(color)
-                savedSelectedNames.add(color.name)
+                savedSelectedNames.add(color.id)
                 card.strokeWidth = (4 * resources.displayMetrics.density).toInt()
             }
         }
@@ -183,11 +187,11 @@ class ColorFragment : Fragment() {
                     targetCard.setCardBackgroundColor(android.graphics.Color.parseColor(hex))
                     
                     // Auto-select if not selected
-                    if (!selectedColors.any { it.name == baseColor.name }) {
+                    if (!selectedColors.any { it.id == baseColor.id }) {
                         toggleSelection(targetCard, newColor)
                     } else {
                         // Update current selection with new shade
-                        selectedColors.removeIf { it.name == baseColor.name }
+                        selectedColors.removeIf { it.id == baseColor.id }
                         selectedColors.add(newColor)
                         targetCard.strokeWidth = (4 * resources.displayMetrics.density).toInt()
                     }
@@ -232,10 +236,10 @@ class ColorFragment : Fragment() {
         var explanation = ""
         var advice = StringBuilder()
 
-        val names = colors.map { it.name }
-        val hasBlack = names.contains("Чорний")
-        val hasGrey = names.contains("Сірий")
-        val hasWhite = names.contains("Білий")
+        val names = colors.map { it.id }
+        val hasBlack = names.contains("black")
+        val hasGrey = names.contains("grey")
+        val hasWhite = names.contains("white")
 
         when {
             hasBlack && hasGrey && colors.size == 2 -> {
@@ -243,7 +247,7 @@ class ColorFragment : Fragment() {
                 explanation = getString(R.string.color_exp_urban_gothic)
                 advice.append(getString(R.string.color_adv_urban_gothic))
             }
-            hasWhite && names.contains("Рожевий") && colors.size == 2 -> {
+            hasWhite && names.contains("pink") && colors.size == 2 -> {
                 verdict = getString(R.string.color_verdict_soft_fresh)
                 explanation = getString(R.string.color_exp_soft_fresh)
                 advice.append(getString(R.string.color_adv_soft_fresh))
@@ -253,8 +257,8 @@ class ColorFragment : Fragment() {
                 val main = colors.find { it.angle >= 0 }
                 if (main != null) {
                     verdict = getString(R.string.color_verdict_base_contrast)
-                    explanation = getString(R.string.color_exp_base_contrast, neutral.name, main.name)
-                    advice.append(getString(R.string.color_adv_base_contrast, main.name))
+                    explanation = getString(R.string.color_exp_base_contrast, getString(neutral.nameRes), getString(main.nameRes))
+                    advice.append(getString(R.string.color_adv_base_contrast, getString(main.nameRes)))
                 } else {
                     verdict = getString(R.string.color_verdict_monochrome)
                     explanation = getString(R.string.color_exp_monochrome)
@@ -299,12 +303,15 @@ class ColorFragment : Fragment() {
         // Analyze shades intensity
         val intensityAdvice = analyzeShadesIntensity(colors)
         if (intensityAdvice.isNotEmpty()) {
-            advice.append("\n\n● **Зауваження щодо відтінків:**\n$intensityAdvice")
+            advice.append("\n\n" + getString(R.string.color_shades_notice) + intensityAdvice)
         }
 
         advice.append(getString(R.string.color_adv_wardobe_header))
         colors.forEach { color ->
-            advice.append("- **${color.name}**: рекомендуємо обрати ${color.clothingTip}.\n")
+            val colorName = getString(color.nameRes)
+            val clothingTip = getString(color.tipRes)
+            val recommendStr = getString(R.string.color_recommend)
+            advice.append("- **$colorName**: $recommendStr $clothingTip.\n")
         }
 
         lastVerdict = verdict
@@ -315,7 +322,48 @@ class ColorFragment : Fragment() {
         binding.cardDiagnosticResult.visibility = View.VISIBLE
         binding.textResultVerdict.text = verdict
         binding.textResultExplanation.text = explanation
-        binding.textResultAdvice.text = advice.toString()
+        
+        val adviceStr = advice.toString()
+            .replace(Regex("\\*\\*(.*?)\\*\\*"), "<b>$1</b>")
+            .replace("\n", "<br>")
+        val spannedText = androidx.core.text.HtmlCompat.fromHtml(adviceStr, androidx.core.text.HtmlCompat.FROM_HTML_MODE_COMPACT)
+        
+        val spannableBuilder = android.text.SpannableStringBuilder(spannedText)
+        val clothingItems = listOf(
+            ClothingItem("блуз", R.string.clothing_bluzka_name, R.string.clothing_bluzka_desc_ua, "https://images.unsplash.com/photo-1551163943-3f6a855d1153?q=80&w=600&auto=format&fit=crop"),
+            ClothingItem("куртк", R.string.clothing_kurtka_name, R.string.clothing_kurtka_desc_ua, "https://images.unsplash.com/photo-1551028719-0141bf9d2067?q=80&w=600&auto=format&fit=crop"),
+            ClothingItem("кед", R.string.clothing_kedі_name, R.string.clothing_kedі_desc_ua, "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=600&auto=format&fit=crop"),
+            ClothingItem("лофер", R.string.clothing_loфері_name, R.string.clothing_loфері_desc_ua, "https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=600&auto=format&fit=crop")
+        )
+
+        val fullString = spannableBuilder.toString().lowercase()
+        clothingItems.forEach { item ->
+            var startIndex = fullString.indexOf(item.keyword)
+            while (startIndex >= 0) {
+                // Find end of word
+                var endIndex = startIndex + item.keyword.length
+                while (endIndex < fullString.length && fullString[endIndex].isLetter()) {
+                    endIndex++
+                }
+                
+                val clickableSpan = object : android.text.style.ClickableSpan() {
+                    override fun onClick(widget: View) {
+                        showClothingPopup(item)
+                    }
+                    override fun updateDrawState(ds: android.text.TextPaint) {
+                        super.updateDrawState(ds)
+                        ds.color = android.graphics.Color.parseColor("#BC13FE")
+                        ds.isUnderlineText = true
+                        ds.typeface = android.graphics.Typeface.DEFAULT_BOLD
+                    }
+                }
+                spannableBuilder.setSpan(clickableSpan, startIndex, endIndex, android.text.Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+                startIndex = fullString.indexOf(item.keyword, endIndex)
+            }
+        }
+
+        binding.textResultAdvice.text = spannableBuilder
+        binding.textResultAdvice.movementMethod = android.text.method.LinkMovementMethod.getInstance()
         
         // Soft scroll
         binding.scrollView.post {
@@ -327,7 +375,7 @@ class ColorFragment : Fragment() {
 
     private fun generateAccessoriesAdvice(colors: List<FashionColor>, intensity: String): String {
         val advice = StringBuilder()
-        val names = colors.map { it.name }
+        val names = colors.map { it.id }
         val isPastel = intensity.contains("пастельну")
         val isDark = intensity.contains("Глибокі")
         
@@ -340,7 +388,7 @@ class ColorFragment : Fragment() {
         
         // Bags and accessories (Inclusive)
         advice.append("\nАксесуари: ")
-        if (names.contains("Коричневий") || names.contains("Кавовий") || names.contains("Бежевий")) {
+        if (names.contains("brown") || names.contains("coffee") || names.contains("beige")) {
             advice.append("Шкіряний ремінь та сумка в тон (месенджер або тоут). ")
         } else {
             advice.append("Сумка-кросбоді або міський рюкзак. ")
@@ -349,7 +397,7 @@ class ColorFragment : Fragment() {
         // Gender neutral touches
         advice.append("Додайте годинник з металевим браслетом або мінімалістичну біжутерію. ")
         
-        if (names.contains("Чорний")) {
+        if (names.contains("black")) {
             advice.append("Для гостроти образу можна додати сонцезахисні окуляри в грубій оправі.")
         }
         
@@ -371,23 +419,23 @@ class ColorFragment : Fragment() {
         }
         
         return when {
-            lightCount == colors.size -> "Ви обрали пастельну палітру. Це створює дуже ніжний, 'зефірний' образ, який ідеально підходить для літа або романтичних подій."
-            darkCount == colors.size -> "Глибокі та темні відтінки додають образу драматизму та статусності. Це чудовий вибір для вечірнього виходу або ділового стилю 'Power Dressing'."
-            lightCount > 0 && darkCount > 0 -> "Поєднання дуже світлих та дуже темних відтінків створює максимальний контраст, що робить образ динамічним та сучасним."
+            lightCount == colors.size -> getString(R.string.color_shades_pastel)
+            darkCount == colors.size -> getString(R.string.color_shades_dark)
+            lightCount > 0 && darkCount > 0 -> getString(R.string.color_shades_contrast)
             else -> ""
         }
     }
 
-    data class FashionColor(val name: String, val hex: String, val angle: Int, val clothingTip: String)
+    data class FashionColor(val id: String, val hex: String, val angle: Int, val nameRes: Int, val tipRes: Int)
 
     private fun colorizeText() {
         val colorMap = mapOf(
-            "Червоний" to "#FF0000",
-            "жовтий" to "#FFD700",
-            "синій" to "#0000FF",
-            "Помаранчевий" to "#FFA500",
-            "зелений" to "#008000",
-            "фіолетовий" to "#800080"
+            getString(R.string.color_name_red) to "#FF0000",
+            getString(R.string.color_name_yellow) to "#FFD700",
+            getString(R.string.color_name_blue) to "#0000FF",
+            getString(R.string.color_name_orange) to "#FFA500",
+            getString(R.string.color_name_green) to "#008000",
+            getString(R.string.color_name_violet) to "#800080"
         )
 
         val textView = binding.textEssenceContent
@@ -479,5 +527,31 @@ class ColorFragment : Fragment() {
         _binding = null
     }
 
+    data class ClothingItem(val keyword: String, val nameRes: Int, val descRes: Int, val imageUrl: String)
 
+    private fun showClothingPopup(item: ClothingItem) {
+        val dialog = android.app.Dialog(requireContext())
+        dialog.setContentView(R.layout.dialog_clothing_popup)
+        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        val tvName = dialog.findViewById<android.widget.TextView>(R.id.tvClothingName)
+        val tvDesc = dialog.findViewById<android.widget.TextView>(R.id.tvClothingDescription)
+        val ivImage = dialog.findViewById<android.widget.ImageView>(R.id.ivClothingImage)
+
+        tvName.text = getString(item.nameRes)
+        tvDesc.text = getString(item.descRes)
+
+        com.bumptech.glide.Glide.with(this)
+            .load(item.imageUrl)
+            .centerCrop()
+            .into(ivImage)
+
+        // Close when clicking outside or anywhere in the dialog root for simplicity if it fills screen
+        val rootLayout = dialog.findViewById<android.view.View>(android.R.id.content)
+        rootLayout?.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
+    }
 }

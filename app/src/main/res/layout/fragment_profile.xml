@@ -20,7 +20,7 @@
             <!-- Header spacer — same height as the header overlay below -->
             <View
                 android:layout_width="match_parent"
-                android:layout_height="200dp" />
+                android:layout_height="160dp" />
 
             <!-- Settings content -->
             <LinearLayout
@@ -295,23 +295,23 @@
     <LinearLayout
         android:id="@+id/profile_header"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="160dp"
         android:background="@color/primary"
         android:gravity="center"
         android:orientation="vertical"
-        android:paddingTop="32dp"
-        android:paddingBottom="24dp">
+        android:paddingTop="24dp"
+        android:paddingBottom="12dp">
 
         <ImageView
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@android:drawable/ic_menu_manage"
             app:tint="@color/white" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="6dp"
             android:fontFamily="@font/comic_sans"
             android:text="@string/profile_title"
             android:textColor="@color/white"
@@ -326,38 +326,7 @@
             android:textColor="#CCFFFFFF"
             android:textSize="13sp" />
             
-        <LinearLayout
-            android:id="@+id/btn_account"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_glass_button"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:minWidth="180dp">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@android:drawable/ic_menu_myplaces"
-                app:tint="@color/white" />
-
-            <TextView
-                android:id="@+id/tv_account_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/profile_account_google"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+    
     </LinearLayout>
 
 </FrameLayout>

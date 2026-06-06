@@ -30,7 +30,6 @@ class ProfileFragment : Fragment() {
         updateLanguageLabel()
         updateThemeLabel()
         updateCityLabel()
-        updateAccountLabel()
         setupClickListeners()
     }
 
@@ -45,16 +44,7 @@ class ProfileFragment : Fragment() {
         }
     }
 
-    private fun updateAccountLabel() {
-        val prefs = requireContext().getSharedPreferences("app_prefs", android.content.Context.MODE_PRIVATE)
-        val isConnected = prefs.getBoolean("account_connected", false)
-        if (isConnected) {
-            val name = prefs.getString("account_name", "User")
-            binding.tvAccountName.text = "${getString(R.string.profile_account_connected)} $name"
-        } else {
-            binding.tvAccountName.text = getString(R.string.profile_account_google)
-        }
-    }
+
 
     // ── Language label ───────────────────────────────────────────────────────
 
@@ -66,10 +56,6 @@ class ProfileFragment : Fragment() {
     // ── Click handlers ───────────────────────────────────────────────────────
 
     private fun setupClickListeners() {
-        // Account button
-        binding.btnAccount.setOnClickListener {
-            connectGoogleAccount()
-        }
 
         // Language picker
         binding.itemLanguage.setOnClickListener { showLanguageDialog() }
@@ -87,20 +73,7 @@ class ProfileFragment : Fragment() {
         binding.itemContact.setOnClickListener { showContactDialog() }
     }
 
-    private fun connectGoogleAccount() {
-        // Automatic connection placeholder
-        val prefs = requireContext().getSharedPreferences("app_prefs", android.content.Context.MODE_PRIVATE)
-        val isConnected = prefs.getBoolean("account_connected", false)
-        
-        if (!isConnected) {
-            prefs.edit().putBoolean("account_connected", true).apply()
-            prefs.edit().putString("account_name", "Mira Romanenko").apply()
-            updateAccountLabel()
-            Toast.makeText(requireContext(), "Google Account Connected Automatically", Toast.LENGTH_SHORT).show()
-        } else {
-            Toast.makeText(requireContext(), "Account already connected", Toast.LENGTH_SHORT).show()
-        }
-    }
+
 
     // ── Dialogs ──────────────────────────────────────────────────────────────
     private fun showLanguageDialog() {

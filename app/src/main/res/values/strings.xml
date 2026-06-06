@@ -25,7 +25,18 @@
     <string name="history_dresses">Сукні</string>
     <string name="history_pants">Штани та спідниці</string>
     
-    <!-- Mixer / Smart Selection -->
+    <string name="clothing_bluzka_name">Блузка</string>
+    <string name="clothing_bluzka_desc_ua">Легка жіноча блузка з шовку, ідеальна для весняних образів.</string>
+    <string name="clothing_bluzka_desc_en">A light women\'s silk blouse, perfect for spring outfits.</string>
+    <string name="clothing_kurtka_name">Куртка</string>
+    <string name="clothing_kurtka_desc_ua">Стильна зимова куртка з утеплювачем, підходить для холодної погоди.</string>
+    <string name="clothing_kurtka_desc_en">A stylish winter jacket with insulation, suitable for cold weather.</string>
+    <string name="clothing_kedі_name">Кеди</string>
+    <string name="clothing_kedі_desc_ua">Трендові кеді з тканинною підкладкою, підходять для кежуал стилю.</string>
+    <string name="clothing_kedі_desc_en">Trendy sneakers with fabric lining, suitable for casual style.</string>
+    <string name="clothing_loфері_name">Лофери</string>
+    <string name="clothing_loфері_desc_ua">Класичні шкіряні лофери, підходять для офісу.</string>
+    <string name="clothing_loфері_desc_en">Classic leather loafers, suitable for office wear.</string>
     <string name="mixer_title">Ваш образ</string>
     <string name="mixer_upper">Верхня частина</string>
     <string name="mixer_lower">Нижня частина</string>
@@ -130,17 +141,18 @@
     <string name="colors_show_last">Показати останній результат</string>
     <string name="colors_result_title">Результат аналізу</string>
     <string name="colors_stylist_advice">Поради стиліста:</string>
-    <string name="colors_palette_hint">Натисніть на коло, щоб розгорнути</string>
+    <string name="colors_palette_hint">Натисніть на палітру, щоб побачити свої ідеальні кольори!</string>
+    <string name="colors_diagnostic_click_hint">*Щоб побачити більш детальну інформацію - натисніть на виділене слово</string>
     <string name="colors_hide_theory">Приховати теорію</string>
     <string name="colors_about_palette">Про палітру</string>
     <string name="colors_essence_title">Сутність віх кольору</string>
     <string name="colors_combo_title">Чому вони пасують?</string>
     
     <!-- Color Theory Keys -->
-    <string name="color_intro">Палітра — це ваш путівник у світ гармонії. Кожен колір несе свій настрій та енергетику.</string>
-    <string name="color_essence">Основа кольору полягає в його температурі, насиченості та значенні для вашого типу зовнішності.</string>
-    <string name="color_combos">Вдалі поєднання будуються на контрасті або спорідненості відтінків, що створює цілісний образ.</string>
-    <string name="color_mixing">Змішування кольорів — це мистецтво, яке дозволяє створювати унікальні візуальні ефекти.</string>
+    <string name="color_intro">Палітра — це ваш головний інструмент створення стилю. Кольори впливають на психологічне сприйняття: теплі (червоний, жовтий) викликають відчуття енергії та пристрасті, холодні (синій, зелений) діють заспокійливо і символізують стабільність. Вибір кольору визначає не лише ваш вигляд, а й настрій.</string>
+    <string name="color_essence">Кожен колір має три характеристики: відтінок (назва кольору), насиченість (яскравість чи приглушеність) та температуру (теплий чи холодний). Знаючи свій кольоротип (Зима, Весна, Літо, Осінь), ви можете підбирати ідеальні базові кольори, які підкреслюватимуть природну красу вашого обличчя.</string>
+    <string name="color_combos">Ідеальні поєднання можна створити за допомогою колірного кола Іттена. Основні схеми: монохромна (відтінки одного кольору), аналогічна (кольори поруч на колі), комплементарна (протилежні кольори для сильного контрасту) та тріадна (три рівновіддалені кольори на колі).</string>
+    <string name="color_mixing" formatted="false">Головне правило: використовуйте не більше трьох основних кольорів в одному образі. Найкраще працює формула 60-30-10: 60% — базовий колір (наприклад, костюм), 30% — додатковий (сорочка), 10% — акцентний (краватка, сумка, взуття або хустка).</string>
 
     <!-- Profile & Settings -->
     <string name="profile_title">Мій профіль</string>
@@ -258,17 +270,20 @@
     <string name="look_10_full">Бре були прообразом сучасної білизни. Вони мали куліску для пояса.</string>
 
     <!-- Stylist Data -->
-    <string name="stylist_1_name">Олена Модна</string>
-    <string name="stylist_1_bio">Експерт з античного стилю та сучасного мінімалізму. Знає все про те, як носити туніку в 2026 році.</string>
+    <string name="stylist_1_name">Ілларіон Павлюк (SweetJumble)</string>
+    <string name="stylist_1_bio">Один із провідних експертів, що стояв біля витоків розвитку персонального стайлінгу в Україні.</string>
     
-    <string name="stylist_2_name">Марина Ренесанс</string>
-    <string name="stylist_2_bio">Майстер складних образів та багатошаровості. Допоможе вам виглядати як шедевр Да Вінчі.</string>
+    <string name="stylist_2_name">Тетяна Урсул</string>
+    <string name="stylist_2_bio">Відомий експерт із чоловічого іміджу, яка щорічно формує десятки гардеробів.</string>
     
-    <string name="stylist_3_name">Катя Стиль</string>
-    <string name="stylist_3_bio">Королева аксесуарів та витончених ліній. Спеціалізується на вечірніх сукнях та корсетах.</string>
+    <string name="stylist_3_name">Яна Підопригора</string>
+    <string name="stylist_3_bio">Сертифікована фахівчиня та членкиня Асоціації стилістів України, що спеціалізується на персональних капсулах та свідомому шопінгу.</string>
     
-    <string name="stylist_4_name">Віктор Вінтаж</string>
-    <string name="stylist_4_bio">Любитель історії та класичного костюма. Створить для вас образ, що не підвладний часу.</string>
+    <string name="stylist_4_name">Діана Сидорович</string>
+    <string name="stylist_4_bio">Затребувана іміджмейкерка, яка допомагає створити цілісний і функціональний образ.</string>
+
+    <string name="stylist_5_name">Анна Кобзар</string>
+    <string name="stylist_5_bio">Стилістка, телеведуча та дизайнерка, яка працює як з індивідуальними клієнтами, так і з українськими брендами.</string>
 
     <string-array name="countries_array">
         <item>Україна</item>
@@ -307,4 +322,62 @@
         <item>Луцьк</item>
         <item>Ужгород</item>
     </string-array>
+
+    <!-- Gemini Chat -->
+    <string name="chat_banner_title">🤖 Чат зі стилістом Gemini AI</string>
+    <string name="chat_banner_desc">Маєте труднощі з вибором образу? Отримайте миттєву пораду від нашого персонального ШІ-стиліста!</string>
+    <string name="chat_banner_btn">Почати чат</string>
+    <string name="chat_header_title">AI Стиліст</string>
+    <string name="chat_input_hint">Спитайте про моду або попросіть згенерувати образ...</string>
+    <string name="chat_new_chat">Новий чат</string>
+    <string name="chat_history_title">Історія чатів</string>
+    <string name="chat_no_history">Історія чатів порожня</string>
+    <string name="chat_welcome_message">Привіт! Я твій персональний AI-стиліст. Можу порадити поєднання одягу, розповісти про тренди або згенерувати образ. Спробуй написати: "Згенеруй вечірній образ"</string>
+    <string name="chat_error_failed">Помилка з\'єднання з AI. Перевірте інтернет.</string>
+
+    <!-- Color Names and Tips -->
+    <string name="color_name_red">Червоний</string>
+    <string name="color_tip_red">сукня/сорочка, пальто, акцентне взуття</string>
+    <string name="color_name_orange">Помаранчевий</string>
+    <string name="color_tip_orange">светр/худі, яскраві аксесуари</string>
+    <string name="color_name_yellow">Жовтий</string>
+    <string name="color_tip_yellow">акцентна сумка/рюкзак, блуза/поло</string>
+    <string name="color_name_lime">Лайм</string>
+    <string name="color_tip_lime">спортивний одяг, неонові кеди/шнурки</string>
+    <string name="color_name_green">Зелений</string>
+    <string name="color_tip_green">штани-карго/чіноси, трикотаж</string>
+    <string name="color_name_emerald">Смарагдовий</string>
+    <string name="color_tip_emerald">костюм, прикраси/годинник</string>
+    <string name="color_name_cyan">Блакитний</string>
+    <string name="color_tip_cyan">сорочка, сарафан/джинсова куртка</string>
+    <string name="color_name_blue">Синій</string>
+    <string name="color_tip_blue">діловий піджак/блейзер, джинси</string>
+    <string name="color_name_indigo">Індиго</string>
+    <string name="color_tip_indigo">кардиган, вечірні штани/спідниця</string>
+    <string name="color_name_violet">Фіолетовий</string>
+    <string name="color_tip_violet">хустка/краватка, пальто</string>
+    <string name="color_name_magenta">Пурпуровий</string>
+    <string name="color_tip_magenta">акцентний топ, біжутерія</string>
+    <string name="color_name_pink">Рожевий</string>
+    <string name="color_tip_pink">футболка/блуза, аксесуари</string>
+    <string name="color_name_white">Білий</string>
+    <string name="color_tip_white">базова сорочка/футболка, білі кеди</string>
+    <string name="color_name_black">Чорний</string>
+    <string name="color_tip_black">сітчастий лонгслів (mesh), жакет/косуха, лофери</string>
+    <string name="color_name_grey">Сірий</string>
+    <string name="color_tip_grey">худі оверсайз, вовняне пальто, штани</string>
+    <string name="color_name_brown">Коричневий</string>
+    <string name="color_tip_brown">шкіряна куртка, черевики/чоботи</string>
+    <string name="color_name_beige">Бежевий</string>
+    <string name="color_tip_beige">тренч, кашеміровий джемпер, чіноси</string>
+    <string name="color_name_coffee">Кавовий</string>
+    <string name="color_tip_coffee">вельветові штани, ремінь, пальта</string>
+
+    <string name="color_shades_pastel">Ви обрали пастельну палітру. Це створює дуже ніжний, "зефірний" образ, який ідеально підходить для літа або романтичних подій.</string>
+    <string name="color_shades_dark">Глибокі та темні відтінки додають образу драматизму та статусності. Це чудовий вибір для вечірнього виходу або ділового стилю "Power Dressing".</string>
+    <string name="color_shades_contrast">Поєднання дуже світлих та дуже темних відтінків створює максимальний контраст, що робить образ динамічним та сучасним.</string>
+    <string name="color_shades_notice">● **Зауваження щодо відтінків:**
+</string>
+    <string name="color_recommend">рекомендуємо обрати</string>
+
 </resources>
