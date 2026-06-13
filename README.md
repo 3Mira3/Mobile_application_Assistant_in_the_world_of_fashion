@@ -51,7 +51,7 @@ Mobile_application_Assistant_in_the_world_of_fashion/
 ├── app/
 │   ├── src/main/
 │   │   ├── java/stu/cn/ua/...     # Основний код
-│   │   ├── res/                    # Ресурси (drawable, values, etc.)
+│   │   ├── res/                   # Ресурси (drawable, values, etc.)
 │   │   └── AndroidManifest.xml
 ├── build.gradle.kts
 ├── settings.gradle.kts
@@ -83,15 +83,22 @@ Mobile_application_Assistant_in_the_world_of_fashion/
 3. Синхронізуй Gradle
 4. Запусти на емуляторі або реальному пристрої (min SDK 24+)
 
-APK (реліз)
+## APK (реліз)
+
 Завантаж останню версію з Releases
 
-Автор
+##Автор
+
 Романенко Мирослава Вікторівна
+
 Група КІ-221
+
 Національний університет «Чернігівська політехніка»
+
 Керівник: Базилевич Володимир Маркович
 
-Ліцензія
+## Ліцензія
+
 Цей проєкт створено в рамках дипломної роботи.
+
 Для комерційного використання звертайтесь до автора.
