@@ -50,19 +50,12 @@
 Mobile_application_Assistant_in_the_world_of_fashion/
 
 ├── app/
-
 │   ├── src/main/
-
 │   │   ├── java/stu/cn/ua/...     # Основний код
-
 │   │   ├── res/                   # Ресурси (drawable, values, etc.)
-
 │   │   └── AndroidManifest.xml
-
 ├── build.gradle.kts
-
 ├── settings.gradle.kts
-
 └── README.md
 
 ---
