@@ -86,8 +86,11 @@ Mobile_application_Assistant_in_the_world_of_fashion/
 ## APK (реліз)
 
 Завантаж останню версію з Releases
+ ```bash
+https://github.com/3Mira3/Mobile_application_Assistant_in_the_world_of_fashion/releases
+```
 
-##Автор
+## Автор
 
 Романенко Мирослава Вікторівна
 
@@ -99,6 +102,6 @@ Mobile_application_Assistant_in_the_world_of_fashion/
 
 ## Ліцензія
 
-Цей проєкт створено в рамках дипломної роботи.
+Цей проtкт створено в рамках дипломної роботи.
 
 Для комерційного використання звертайтесь до автора.
