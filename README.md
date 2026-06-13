@@ -48,15 +48,22 @@
 ## Структура проекту
 
 Mobile_application_Assistant_in_the_world_of_fashion/
-├── app/
-│   ├── src/main/
-│   │   ├── java/stu/cn/ua/...     # Основний код
-│   │   ├── res/                   # Ресурси (drawable, values, etc.)
-│   │   └── AndroidManifest.xml
-├── build.gradle.kts
-├── settings.gradle.kts
-└── README.md
 
+├── app/
+
+│   ├── src/main/
+
+│   │   ├── java/stu/cn/ua/...     # Основний код
+
+│   │   ├── res/                   # Ресурси (drawable, values, etc.)
+
+│   │   └── AndroidManifest.xml
+
+├── build.gradle.kts
+
+├── settings.gradle.kts
+
+└── README.md
 
 ---
 
@@ -102,6 +109,6 @@ https://github.com/3Mira3/Mobile_application_Assistant_in_the_world_of_fashion/r
 
 ## Ліцензія
 
-Цей проtкт створено в рамках дипломної роботи.
+Цей проект створено в рамках дипломної роботи.
 
 Для комерційного використання звертайтесь до автора.
