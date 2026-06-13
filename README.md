@@ -49,6 +49,7 @@
 
 Mobile_application_Assistant_in_the_world_of_fashion/
 
+```bash
 ├── app/
 │   ├── src/main/
 │   │   ├── java/stu/cn/ua/...     # Основний код
@@ -57,6 +58,7 @@ Mobile_application_Assistant_in_the_world_of_fashion/
 ├── build.gradle.kts
 ├── settings.gradle.kts
 └── README.md
+```
 
 ---
 
